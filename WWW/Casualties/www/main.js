@@ -1278,7 +1278,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.get("http://localhost:8080/api/customers", {
+            _this.http.get("http://pratiche.ares/api/customers", {
                 headers: {
                     's-t': session
                 },
@@ -1322,7 +1322,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.get("http://localhost:8080/api/customers/" + token, {
+            _this.http.get("http://pratiche.ares/api/customers/" + token, {
                 headers: {
                     's-t': session
                 },

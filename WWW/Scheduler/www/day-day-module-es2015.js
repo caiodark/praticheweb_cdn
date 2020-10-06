@@ -146,13 +146,13 @@ let DayPage = class DayPage {
     }
     goToSource(e) {
         if (e.kind === 'policy') {
-            window.location.href = `http://localhost:8080/policies/policy/${e.token}`;
+            window.location.href = `http://pratiche.ares/policies/policy/${e.token}`;
         }
         if (e.kind === 'casualty') {
-            window.location.href = `http://localhost:8080/casualties/casualty/${e.token}`;
+            window.location.href = `http://pratiche.ares/casualties/casualty/${e.token}`;
         }
         if (e.kind === 'proposal') {
-            window.location.href = `http://localhost:8080/policies/proposal/${e.token}`;
+            window.location.href = `http://pratiche.ares/policies/proposal/${e.token}`;
         }
     }
 };

@@ -355,7 +355,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.get("http://localhost:8080/api/customers", {
+            _this.http.get("http://pratiche.ares/api/customers", {
                 headers: {
                     's-t': session
                 },
@@ -399,7 +399,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.get("http://localhost:8080/api/customers/" + token, {
+            _this.http.get("http://pratiche.ares/api/customers/" + token, {
                 headers: {
                     's-t': session
                 },
@@ -455,7 +455,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.post("http://localhost:8080/api/customers", record, {
+            _this.http.post("http://pratiche.ares/api/customers", record, {
                 headers: {
                     's-t': session
                 },
@@ -494,7 +494,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.put("http://localhost:8080/api/customers/" + customer.token, record, {
+            _this.http.put("http://pratiche.ares/api/customers/" + customer.token, record, {
                 headers: {
                     's-t': session
                 },
@@ -521,7 +521,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.delete("http://localhost:8080/api/customers/" + token, {
+            _this.http.delete("http://pratiche.ares/api/customers/" + token, {
                 headers: {
                     's-t': session
                 },

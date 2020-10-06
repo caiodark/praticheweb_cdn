@@ -346,7 +346,7 @@ var AttachmentsService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.get("http://localhost:8080/api/attachments/" + kind + "/" + token, {
+            _this.http.get("http://pratiche.ares/api/attachments/" + kind + "/" + token, {
                 headers: {
                     's-t': session
                 },
@@ -382,7 +382,7 @@ var AttachmentsService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.post("http://localhost:8080/api/attachments/" + kind + "/" + token, attachment, {
+            _this.http.post("http://pratiche.ares/api/attachments/" + kind + "/" + token, attachment, {
                 headers: {
                     's-t': session
                 },
@@ -404,7 +404,7 @@ var AttachmentsService = /** @class */ (function () {
         if (!session) {
             session = 'loggedout';
         }
-        return this.http.post("http://localhost:8080/api/attachments/copy/" + a.kind + "/" + a.token + "/" + a._id + "/to/" + destKind + "/" + destTkn, {}, {
+        return this.http.post("http://pratiche.ares/api/attachments/copy/" + a.kind + "/" + a.token + "/" + a._id + "/to/" + destKind + "/" + destTkn, {}, {
             headers: {
                 's-t': session
             }
@@ -419,7 +419,7 @@ var AttachmentsService = /** @class */ (function () {
             }
             var token = attachment.token;
             var kind = attachment.kind;
-            _this.http.put("http://localhost:8080/api/attachments/" + kind + "/" + token + "/" + attachment._id, attachment, {
+            _this.http.put("http://pratiche.ares/api/attachments/" + kind + "/" + token + "/" + attachment._id, attachment, {
                 headers: {
                     's-t': session
                 },
@@ -445,7 +445,7 @@ var AttachmentsService = /** @class */ (function () {
             }
             var token = attachment.token;
             var kind = attachment.kind;
-            _this.http.delete("http://localhost:8080/api/attachments/" + kind + "/" + token + "/" + attachment._id, {
+            _this.http.delete("http://pratiche.ares/api/attachments/" + kind + "/" + token + "/" + attachment._id, {
                 headers: {
                     's-t': session
                 },

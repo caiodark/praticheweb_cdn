@@ -401,7 +401,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.get("http://localhost:8080/api/customers", {
+            _this.http.get("http://pratiche.ares/api/customers", {
                 headers: {
                     's-t': session
                 },
@@ -445,7 +445,7 @@ var CustomerService = /** @class */ (function () {
             if (!session) {
                 session = 'loggedout';
             }
-            _this.http.get("http://localhost:8080/api/customers/" + token, {
+            _this.http.get("http://pratiche.ares/api/customers/" + token, {
                 headers: {
                     's-t': session
                 },
@@ -517,7 +517,7 @@ __webpack_require__.r(__webpack_exports__);
 var OrganizationService = /** @class */ (function () {
     function OrganizationService(hc) {
         this.hc = hc;
-        this.url = 'http://localhost:8080/api/world';
+        this.url = 'http://pratiche.ares/api/world';
     }
     OrganizationService.prototype.getOrganizationList = function (kind) {
         var session = window.localStorage.getItem('_session');
@@ -564,7 +564,7 @@ __webpack_require__.r(__webpack_exports__);
 var PolicyService = /** @class */ (function () {
     function PolicyService(hc) {
         this.hc = hc;
-        this.baseUrl = 'http://localhost:8080/api/policies';
+        this.baseUrl = 'http://pratiche.ares/api/policies';
     }
     PolicyService.prototype.getList = function (kind) {
         var mayKind = kind ? kind : 'policy';
@@ -674,7 +674,7 @@ __webpack_require__.r(__webpack_exports__);
 var SetupPoliciesService = /** @class */ (function () {
     function SetupPoliciesService(hc) {
         this.hc = hc;
-        this.baseUrl = 'http://localhost:8080/api/setuppolicies/';
+        this.baseUrl = 'http://pratiche.ares/api/setuppolicies/';
     }
     SetupPoliciesService.prototype.getKinds = function () {
         var session = window.localStorage.getItem('_session');

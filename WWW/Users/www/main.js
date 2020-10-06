@@ -979,7 +979,7 @@ var AppComponent = /** @class */ (function () {
         });
     };
     AppComponent.prototype.homeUsersClick = function () {
-        window.location.href = 'http://localhost:8080/users';
+        window.location.href = 'http://pratiche.ares/users';
     };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({

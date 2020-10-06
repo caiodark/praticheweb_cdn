@@ -18322,7 +18322,7 @@ __webpack_require__.r(__webpack_exports__);
 let EventService = class EventService {
     constructor(http) {
         this.http = http;
-        this.baseUrl = 'http://localhost:8080/api/scheduler';
+        this.baseUrl = 'http://pratiche.ares/api/scheduler';
     }
     buildHeaders() {
         const session = window.localStorage.getItem('_session') || 'notloggedin';
